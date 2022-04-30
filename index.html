@@ -273,69 +273,13 @@ var actionbardata = {"siteID":"199554976","siteURL":"http:\/\/kawaii0205.wordpre
 </head>
 
 <body class="home page-template-default page page-id-28 logged-in admin-bar no-customize-support wp-embed-responsive customizer-styles-applied hide-post-and-page-titles hide-site-footer hide-comments singular has-main-navigation hide-homepage-title has-marketing-bar has-marketing-bar-theme-bantry highlander-enabled highlander-light">
-		<div id="wpadminbar" class="nojq nojs ltr nav-unification">
-							<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">跳至工具栏</a>
-						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="工具栏" tabindex="0">
-						<ul id="wp-admin-bar-root-default" class="ab-top-menu">
-			
-		<li id="wp-admin-bar-blog" class="my-sites mb-trackable"><a class="ab-item"  href="https://wordpress.com/sites/kawaii0205.wordpress.com">我的站点</a>		</li>
-		<li id="wp-admin-bar-jumptotop-button-menu"><a class="ab-item"  href="#"><div id="jumptotop"><span class="noticon noticon-top"></span></div></a>		</li>
-		<li id="wp-admin-bar-newdash" class="mb-trackable"><a class="ab-item"  href="https://wordpress.com/read">阅读器</a>		</li>		</ul>
-			<ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
-			
-		<li id="wp-admin-bar-notes" class="menupop">		<div class="ab-item ab-empty-item" ><span id="wpnt-notes-unread-count" class="wpnt-loading wpn-read"></span><span class="noticon noticon-bell"></span><span class="ab-text">通知</span></div><div id="wpnt-notes-panel2" style="display:none" lang="zh-cn" dir="ltr"><div class="wpnt-notes-panel-header"><span class="wpnt-notes-header"></span><span class="wpnt-notes-panel-link"></span></div></div>		</li>
-		<li id="wp-admin-bar-my-account" class="with-avatar mb-trackable"><a class="ab-item"  href="https://wordpress.com/me/"><img alt='' src='https://2.gravatar.com/avatar/896ae0b380b54b6cc4bcfb94e66200a0?s=32&#038;d=mm&#038;r=G' class='avatar avatar-32' height='32' width='32' /><span class="ab-text">我</span></a>		</li>
-		<li id="wp-admin-bar-ab-new-post" class="mb-trackable"><a class="ab-item"  href="https://wordpress.com/post/kawaii0205.wordpress.com"><span>撰写</span></a>		</li>		</ul>
-				</div>
-							<a class="screen-reader-shortcut" href="https://kawaii0205.wordpress.com/wp-login.php?action=logout&#038;_wpnonce=2a21859a2c">注销</a>
-					</div>
-
+		
 	
 <script type="text/javascript">
 /* <![CDATA[ */
 var clickDebugLink;
 
-jQuery(document).ready( function($) {
-	var single = false, w = 1000,
-		supe = false;
 
-	$(document.body).load(function(){ $('#wpadminbar img.grav-hashed').removeClass('grav-hashed'); }); // hack to hide the gravatar hovercard
-
-	if ( single && supe )
-		w = 1385;
-	else if ( supe )
-		w = 1200;
-
-	// debug bar extra
-	clickDebugLink = function( parent_id, obj ) {
-
-		$('#'+parent_id).children('div').hide();
-
-		document.getElementById( obj.href.substr( obj.href.indexOf( '#' ) + 1 ) ).style.display = 'block';
-		$( obj.href.substr( obj.href.indexOf( '#' ) ) ).show()
-
-		$(obj).parent().addClass('current').siblings('li').removeClass('current');
-
-		return false;
-	};
-
-	$( '#wpadminbar #wp-admin-bar-shortlink' ).click( function() {
-		$( '#adminbar-shortlink-input' ).select();
-	});
-
-	// skip tap-to-hover on site switcher for mobile
-	if ( 'ontouchstart' in window ) {
-		$('#wp-admin-bar-switch-site').on( 'touchstart', function( event ) {
-			if ( $( window ).width() > 782 ) {
-				return;
-			}
-			event.stopPropagation();
-			$( event.target ).first( 'a' ).click();
-		});
-	}
-
-});
-/* ]]> */
 </script>
 	<div class="wpcom-bubble action-bubble">
 		<div class="bubble-txt"></div>
